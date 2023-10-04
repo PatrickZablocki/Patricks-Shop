@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bricolage+Grotesque&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Edu+SA+Beginner:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jura:wght@300;400;500;600;700&family=Maven+Pro:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300;400;500;600;700&display=swap");
 *, *::before, *::after {
   margin: 0;
@@ -124,5 +125,95 @@ body header .slider img {
     height: 3px;
     background-color: #fff;
     margin: 3px 0;
+  }
+}
+body #PC-Section {
+  background: #333;
+}
+body #PC-Section h2 {
+  color: white;
+  text-shadow: 10px 10px 10px black;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+body #PC-Section .PC_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px 20px;
+  color: white;
+}
+body #PC-Section .PC_container .Zocker-PC, body #PC-Section .PC_container .Zocker-PC-Aet,
+body #PC-Section .PC_container .Gamer-PC, body #PC-Section .PC_container .PC-Gaming,
+body #PC-Section .PC_container .Gamer-PC-Aspect, body #PC-Section .PC_container .PC-für-Zocker {
+  border: 1px solid red;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  body #PC-Section .PC_container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  body #PC-Section .Zocker-PC,
+  body #PC-Section .Zocker-PC-Aet,
+  body #PC-Section .Gamer-PC,
+  body #PC-Section .PC-Gaming,
+  body #PC-Section .Gamer-PC-Aspect,
+  body #PC-Section .PC-für-Zocker {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+body #PC-Section .Laptops_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 20px;
+  color: white;
+}
+body #PC-Section .Laptops_container .Laptop-1, body #PC-Section .Laptops_container .Laptop-2,
+body #PC-Section .Laptops_container .Laptop-3, body #PC-Section .Laptops_container .Laptop-4 {
+  border: 1px solid red;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  body #PC-Section .Laptops_container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  body #PC-Section .Laptop-1,
+  body #PC-Section .Laptop-2,
+  body #PC-Section .Laptop-3,
+  body #PC-Section .Laptop-4 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+body footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+body footer .social-icons {
+  margin-top: 20px;
+}
+body footer .social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  body footer {
+    padding: 10px;
+  }
+  body .social-icons {
+    margin-top: 10px;
+  }
+  body .social-icons a {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
