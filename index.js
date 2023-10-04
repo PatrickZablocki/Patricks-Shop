@@ -21,13 +21,6 @@ setInterval(nextSlide, 5000);
 // Hier endet der JS Code für die Slides
 
 // Hier beginnt der JS code für den Hamburger Menu
-// const menuToggle = document.querySelector('.menu-toggle');
-// const navLinks = document.querySelector('.nav-links');
-
-// menuToggle.addEventListener('click', () => {
-//     navLinks.classList.toggle('active');
-// });
-
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 const navListItems = document.querySelectorAll('.nav-links li');
