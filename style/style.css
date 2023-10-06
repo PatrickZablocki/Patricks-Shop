@@ -84,11 +84,14 @@ body header .slider-container {
 }
 body header .slider {
   display: flex;
+  width: 100%;
   transition: transform 0.5s ease;
+  overflow: hidden;
 }
 body header .slider img {
   width: 100%;
   height: auto;
+  display: block;
 }
 @media screen and (max-width: 768px) {
   body header h1 {

@@ -1,23 +1,30 @@
 // Hier beginnt der JS code für die slides
-const slider = document.querySelector('.slider');
-let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('.slider');
+    const images = slider.querySelectorAll('img');
+    let currentIndex = 0;
 
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % slider.children.length;
-    updateSlider();
-}
+    function showImage(index) {
+        images.forEach(function (image) {
+            image.classList.remove('visible');
+        });
+        images[index].classList.add('visible');
+        const translateX = -index * 100;
+        slider.style.transform = `translateX(${translateX}%)`;
+    }
 
-function prevSlide() {
-    currentIndex = (currentIndex - 1 + slider.children.length) % slider.children.length;
-    updateSlider();
-}
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }
 
-function updateSlider() {
-    const translateX = -currentIndex * 100;
-    slider.style.transform = `translateX(${translateX}%)`;
-}
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    }
 
-setInterval(nextSlide, 5000);
+    setInterval(nextSlide, 5000);
+});
 // Hier endet der JS Code für die Slides
 
 // Hier beginnt der JS code für den Hamburger Menu
