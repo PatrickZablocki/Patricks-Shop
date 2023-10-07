@@ -78,17 +78,20 @@ body header a:hover {
   color: green;
   text-decoration: underline;
 }
-body header .slider-container {
+body header .slider_container {
   width: 100%;
   overflow: hidden;
 }
 body header .slider {
   display: flex;
+  width: 100%;
   transition: transform 0.5s ease;
+  overflow: hidden;
 }
 body header .slider img {
   width: 100%;
   height: auto;
+  display: block;
 }
 @media screen and (max-width: 768px) {
   body header h1 {
@@ -127,17 +130,20 @@ body header .slider img {
     margin: 3px 0;
   }
 }
-body #PC-Section {
+body #PC-Section,
+body #Desktop-PC_Section {
   background: #333;
 }
-body #PC-Section h2 {
+body #PC-Section h2,
+body #Desktop-PC_Section h2 {
   color: white;
   text-shadow: 10px 10px 10px black;
   font-size: 3rem;
   display: flex;
   justify-content: center;
 }
-body #PC-Section .PC_container {
+body #PC-Section .PC_container,
+body #Desktop-PC_Section .PC_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 10px 20px;
@@ -145,46 +151,76 @@ body #PC-Section .PC_container {
 }
 body #PC-Section .PC_container .Zocker-PC, body #PC-Section .PC_container .Zocker-PC-Aet,
 body #PC-Section .PC_container .Gamer-PC, body #PC-Section .PC_container .PC-Gaming,
-body #PC-Section .PC_container .Gamer-PC-Aspect, body #PC-Section .PC_container .PC-für-Zocker {
+body #PC-Section .PC_container .Gamer-PC-Aspect, body #PC-Section .PC_container .PC-für-Zocker,
+body #PC-Section .PC_container .Zocker-PC-Viking, body #PC-Section .PC_container .Battelfield-Private,
+body #PC-Section .PC_container .Battelfield-Corporal, body #PC-Section .PC_container .Spiele-PC,
+body #PC-Section .PC_container .Zocker-PC-Dear, body #PC-Section .PC_container .PC-Gamer-Sharpshooter,
+body #Desktop-PC_Section .PC_container .Zocker-PC,
+body #Desktop-PC_Section .PC_container .Zocker-PC-Aet,
+body #Desktop-PC_Section .PC_container .Gamer-PC,
+body #Desktop-PC_Section .PC_container .PC-Gaming,
+body #Desktop-PC_Section .PC_container .Gamer-PC-Aspect,
+body #Desktop-PC_Section .PC_container .PC-für-Zocker,
+body #Desktop-PC_Section .PC_container .Zocker-PC-Viking,
+body #Desktop-PC_Section .PC_container .Battelfield-Private,
+body #Desktop-PC_Section .PC_container .Battelfield-Corporal,
+body #Desktop-PC_Section .PC_container .Spiele-PC,
+body #Desktop-PC_Section .PC_container .Zocker-PC-Dear,
+body #Desktop-PC_Section .PC_container .PC-Gamer-Sharpshooter {
   border: 1px solid red;
   display: flex;
+  align-items: center;
+}
+body #PC-Section .PC_container .PC-info,
+body #Desktop-PC_Section .PC_container .PC-info {
+  padding: 20px;
+  text-align: right;
+}
+body #PC-Section .PC_container .PC-info h3,
+body #Desktop-PC_Section .PC_container .PC-info h3 {
+  margin-top: 0;
+}
+body #PC-Section .PC_container .Zocker-PC img,
+body #Desktop-PC_Section .PC_container .Zocker-PC img {
+  max-width: 100%;
 }
 @media screen and (max-width: 768px) {
-  body #PC-Section .PC_container {
+  body #PC-Section .PC_container,
+  body #Desktop-PC_Section .PC_container {
     grid-template-columns: 1fr;
     gap: 10px;
   }
-  body #PC-Section .Zocker-PC,
-  body #PC-Section .Zocker-PC-Aet,
-  body #PC-Section .Gamer-PC,
-  body #PC-Section .PC-Gaming,
-  body #PC-Section .Gamer-PC-Aspect,
-  body #PC-Section .PC-für-Zocker {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 }
-body #PC-Section .Laptops_container {
+body #PC-Section .Laptops_container,
+body #Desktop-PC_Section .Laptops_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 10px 20px;
   color: white;
 }
 body #PC-Section .Laptops_container .Laptop-1, body #PC-Section .Laptops_container .Laptop-2,
-body #PC-Section .Laptops_container .Laptop-3, body #PC-Section .Laptops_container .Laptop-4 {
+body #PC-Section .Laptops_container .Laptop-3, body #PC-Section .Laptops_container .Laptop-4,
+body #Desktop-PC_Section .Laptops_container .Laptop-1,
+body #Desktop-PC_Section .Laptops_container .Laptop-2,
+body #Desktop-PC_Section .Laptops_container .Laptop-3,
+body #Desktop-PC_Section .Laptops_container .Laptop-4 {
   border: 1px solid red;
   display: flex;
 }
 @media screen and (max-width: 768px) {
-  body #PC-Section .Laptops_container {
+  body #PC-Section .Laptops_container,
+  body #Desktop-PC_Section .Laptops_container {
     grid-template-columns: 1fr;
     gap: 10px;
   }
   body #PC-Section .Laptop-1,
   body #PC-Section .Laptop-2,
   body #PC-Section .Laptop-3,
-  body #PC-Section .Laptop-4 {
+  body #PC-Section .Laptop-4,
+  body #Desktop-PC_Section .Laptop-1,
+  body #Desktop-PC_Section .Laptop-2,
+  body #Desktop-PC_Section .Laptop-3,
+  body #Desktop-PC_Section .Laptop-4 {
     flex-direction: column;
     align-items: center;
     text-align: center;

@@ -77,17 +77,22 @@ body{
                         color: green;
                         text-decoration: underline;
                     }
-                    .slider-container {
-                        width:100%;
+                    .slider_container {
+                        width: 100%;
                         overflow: hidden;
                     }
+                
                     .slider {
                         display: flex;
+                        width: 100%;
                         transition: transform 0.5s ease;
+                        overflow: hidden;
                     }
+                
                     .slider img {
-                        width:100%;
+                        width: 100%;
                         height: auto;
+                        display: block;
                     }
                     @media screen and (max-width: 768px) {
                         h1{
@@ -127,7 +132,8 @@ body{
                         }
                     }
         }
-        #PC-Section {
+        #PC-Section,
+        #Desktop-PC_Section{
             background: #333;
                 h2{
                     color: white;
@@ -144,9 +150,32 @@ body{
 
                         .Zocker-PC,.Zocker-PC-Aet,
                         .Gamer-PC,.PC-Gaming,
-                        .Gamer-PC-Aspect,.PC-für-Zocker{
+                        .Gamer-PC-Aspect,.PC-für-Zocker,
+                        .Zocker-PC-Viking,.Battelfield-Private,
+                        .Battelfield-Corporal,.Spiele-PC,
+                        .Zocker-PC-Dear,.PC-Gamer-Sharpshooter{
                             border: 1px solid red;
                             display: flex;
+                            
+                            align-items: center;
+                            
+                        }
+                        // .Zocker-PC{
+                        //     border: 1px solid red;
+                        //     display: flex;
+                        //     align-items: center;
+                        // }
+                        .PC-info {
+                            padding: 20px;
+                            text-align: right;
+                        }
+                        
+                        .PC-info h3 {
+                            margin-top: 0;
+                        }
+                        
+                        .Zocker-PC img {
+                            max-width: 100%;
                         }
                     
                 }
@@ -156,16 +185,16 @@ body{
                         gap: 10px;
                     }
                 
-                    .Zocker-PC,
-                    .Zocker-PC-Aet,
-                    .Gamer-PC,
-                    .PC-Gaming,
-                    .Gamer-PC-Aspect,
-                    .PC-für-Zocker {
-                        flex-direction: column;
-                        align-items: center;
-                        text-align: center;
-                    }
+                    // .Zocker-PC,
+                    // .Zocker-PC-Aet,
+                    // .Gamer-PC,
+                    // .PC-Gaming,
+                    // .Gamer-PC-Aspect,
+                    // .PC-für-Zocker {
+                    //     flex-direction: column;
+                    //     align-items: center;
+                    //     text-align: center;
+                    // }
                 }
                 .Laptops_container{
                         display: grid;
@@ -222,4 +251,35 @@ body{
                 font-size: 20px;
             }
         }
+        // Hier beginnt der Style bereich für die Desktop-PC Seite
+        
+    //         background: #333;
+    //             h2{
+    //                 color: white;
+    //                 text-shadow: 10px 10px 10px black;
+    //                 font-size: 3rem;
+    //                 display: flex;
+    //                 justify-content: center;
+    //             }
+    //             .PC_container{
+    //                 display: grid;
+    //                 grid-template-columns: 1fr 1fr 1fr;
+    //                 padding: 10px 20px;
+    //                 color: white;
+
+    //                     .Zocker-PC,.Zocker-PC-Aet,
+    //                     .Gamer-PC,.PC-Gaming,
+    //                     .Gamer-PC-Aspect,.PC-für-Zocker{
+    //                         border: 1px solid red;
+    //                         display: flex;
+    //                     }
+                    
+    //             }
+    //             @media screen and (max-width: 768px) {
+    //                 .PC_container {
+    //                     grid-template-columns: 1fr;
+    //                     gap: 10px;
+    //                 }
+    //     }
+    // }
 }
