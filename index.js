@@ -6,11 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function showImage(index) {
         images.forEach(function (image) {
-            image.classList.remove('visible');
+            image.style.display = 'none';
         });
-        images[index].classList.add('visible');
-        const translateX = -index * 100;
-        slider.style.transform = `translateX(${translateX}%)`;
+        images[index].style.display = 'block';
     }
 
     function nextSlide() {
@@ -38,6 +36,8 @@ menuToggle.addEventListener('click', () => {
         item.style.display = navLinks.classList.contains('active') ? 'block' : 'none';
     });
 });
+
+// 
 
 
 
