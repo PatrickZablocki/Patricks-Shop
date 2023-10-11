@@ -93,6 +93,9 @@ body header .slider img {
   height: auto;
   display: block;
 }
+body header #home {
+  text-decoration: none;
+}
 @media screen and (max-width: 768px) {
   body header h1 {
     font-size: 2rem;
@@ -224,6 +227,57 @@ body #Desktop-PC_Section .Laptops_container .Laptop-4 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+}
+body .info_section {
+  background: #515151;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+}
+body .info_section .info_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+body .info_section h2 {
+  color: white;
+  font-size: 2rem;
+}
+body .info_section p {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+body .info_section .kunden_container,
+body .info_section .bezahl_container,
+body .info_section .versand_container,
+body .info_section .güter_container,
+body .info_section .Newsletter_container {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+body .info_section .kunden_container img,
+body .info_section .bezahl_container img,
+body .info_section .versand_container img,
+body .info_section .güter_container img {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  body .info_section {
+    flex-direction: column;
+  }
+  body .kunden_container,
+  body .bezahl_container,
+  body .versand_container,
+  body .güter_container,
+  body .Newsletter_container {
+    flex: 1;
+    margin: 10px 0;
   }
 }
 body footer {

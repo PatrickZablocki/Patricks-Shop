@@ -94,6 +94,9 @@ body{
                         height: auto;
                         display: block;
                     }
+                    #home{
+                        text-decoration: none;
+                    }
                     @media screen and (max-width: 768px) {
                         h1{
                             font-size: 2rem;
@@ -182,17 +185,6 @@ body{
                         grid-template-columns: 1fr;
                         gap: 10px;
                     }
-                
-                    // .Zocker-PC,
-                    // .Zocker-PC-Aet,
-                    // .Gamer-PC,
-                    // .PC-Gaming,
-                    // .Gamer-PC-Aspect,
-                    // .PC-für-Zocker {
-                    //     flex-direction: column;
-                    //     align-items: center;
-                    //     text-align: center;
-                    // }
                 }
                 .Laptops_container{
                         display: grid;
@@ -222,6 +214,58 @@ body{
                     }
                 }
         }
+        .info_section{
+            background: #515151;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 20px;
+            .info_container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+            }
+                h2{
+                    color: white;
+                    font-size: 2rem;
+                }
+                p{
+                    color: black;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+                    .kunden_container,
+                    .bezahl_container,
+                    .versand_container,
+                    .güter_container,
+                    .Newsletter_container {
+                        flex: 1;
+                        padding: 10px;
+                        text-align: center;
+                    }
+                    .kunden_container img,
+                    .bezahl_container img,
+                    .versand_container img,
+                    .güter_container img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+        @media screen and (max-width: 768px) {
+            .info_section {
+                flex-direction: column;
+            }
+
+            .kunden_container,
+            .bezahl_container,
+            .versand_container,
+            .güter_container,
+            .Newsletter_container {
+                flex: 1;
+                margin: 10px 0;
+            }
+        }
         footer{
             background-color: #333;
             color: #fff;
@@ -249,35 +293,4 @@ body{
                 font-size: 20px;
             }
         }
-        // Hier beginnt der Style bereich für die Desktop-PC Seite
-        
-    //         background: #333;
-    //             h2{
-    //                 color: white;
-    //                 text-shadow: 10px 10px 10px black;
-    //                 font-size: 3rem;
-    //                 display: flex;
-    //                 justify-content: center;
-    //             }
-    //             .PC_container{
-    //                 display: grid;
-    //                 grid-template-columns: 1fr 1fr 1fr;
-    //                 padding: 10px 20px;
-    //                 color: white;
-
-    //                     .Zocker-PC,.Zocker-PC-Aet,
-    //                     .Gamer-PC,.PC-Gaming,
-    //                     .Gamer-PC-Aspect,.PC-für-Zocker{
-    //                         border: 1px solid red;
-    //                         display: flex;
-    //                     }
-                    
-    //             }
-    //             @media screen and (max-width: 768px) {
-    //                 .PC_container {
-    //                     grid-template-columns: 1fr;
-    //                     gap: 10px;
-    //                 }
-    //     }
-    // }
 }
