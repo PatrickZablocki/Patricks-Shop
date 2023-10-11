@@ -74,7 +74,7 @@ body{
                         margin: 3px 0;
                     }
                     a:hover{
-                        color: green;
+                        color:red;
                         text-decoration: underline;
                     }
                     .slider_container {
@@ -160,12 +160,8 @@ body{
                             border: 1px solid red;
                             display: flex;
                             align-items: center;
+                            box-shadow: 10px 10px 10px red;
                         }
-                        // .Zocker-PC{
-                        //     border: 1px solid red;
-                        //     display: flex;
-                        //     align-items: center;
-                        // }
                         .PC-info {
                             padding: 20px;
                             text-align: right;
@@ -177,6 +173,15 @@ body{
                         
                         .Zocker-PC img {
                             max-width: 100%;
+                        }
+                        button{
+                            border-radius: 20px;
+                            width: 50px;
+                        }
+                        button:hover{
+                            background: red;
+                            color: white;
+                            cursor: pointer;
                         }
                     
                 }
@@ -196,6 +201,7 @@ body{
                         .Laptop-3,.Laptop-4{
                             border: 1px solid red;
                             display: flex;
+                            box-shadow: 10px 10px 10px red;
                         }
                 }
                 @media screen and (max-width: 768px) {
