@@ -75,7 +75,7 @@ body header .bar {
   margin: 3px 0;
 }
 body header a:hover {
-  color: green;
+  color: red;
   text-decoration: underline;
 }
 body header .slider_container {
@@ -173,6 +173,7 @@ body #Desktop-PC_Section .PC_container .PC-Gamer-Sharpshooter {
   border: 1px solid red;
   display: flex;
   align-items: center;
+  box-shadow: 10px 10px 10px red;
 }
 body #PC-Section .PC_container .PC-info,
 body #Desktop-PC_Section .PC_container .PC-info {
@@ -186,6 +187,17 @@ body #Desktop-PC_Section .PC_container .PC-info h3 {
 body #PC-Section .PC_container .Zocker-PC img,
 body #Desktop-PC_Section .PC_container .Zocker-PC img {
   max-width: 100%;
+}
+body #PC-Section .PC_container button,
+body #Desktop-PC_Section .PC_container button {
+  border-radius: 20px;
+  width: 50px;
+}
+body #PC-Section .PC_container button:hover,
+body #Desktop-PC_Section .PC_container button:hover {
+  background: red;
+  color: white;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   body #PC-Section .PC_container,
@@ -209,6 +221,7 @@ body #Desktop-PC_Section .Laptops_container .Laptop-3,
 body #Desktop-PC_Section .Laptops_container .Laptop-4 {
   border: 1px solid red;
   display: flex;
+  box-shadow: 10px 10px 10px red;
 }
 @media screen and (max-width: 768px) {
   body #PC-Section .Laptops_container,
