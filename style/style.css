@@ -200,43 +200,32 @@ body #Desktop-PC_Section .PC_container button:hover {
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  body #PC-Section .PC_container,
-  body #Desktop-PC_Section .PC_container {
+  body .PC_container {
     grid-template-columns: 1fr;
     gap: 10px;
   }
 }
-body #PC-Section .Laptops_container,
-body #Desktop-PC_Section .Laptops_container {
+body .Laptops_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 10px 20px;
   color: white;
 }
-body #PC-Section .Laptops_container .Laptop-1, body #PC-Section .Laptops_container .Laptop-2,
-body #PC-Section .Laptops_container .Laptop-3, body #PC-Section .Laptops_container .Laptop-4,
-body #Desktop-PC_Section .Laptops_container .Laptop-1,
-body #Desktop-PC_Section .Laptops_container .Laptop-2,
-body #Desktop-PC_Section .Laptops_container .Laptop-3,
-body #Desktop-PC_Section .Laptops_container .Laptop-4 {
+body .Laptops_container .Laptop-1, body .Laptops_container .Laptop-2,
+body .Laptops_container .Laptop-3, body .Laptops_container .Laptop-4 {
   border: 1px solid red;
   display: flex;
   box-shadow: 10px 10px 10px red;
 }
 @media screen and (max-width: 768px) {
-  body #PC-Section .Laptops_container,
-  body #Desktop-PC_Section .Laptops_container {
+  body .Laptops_container {
     grid-template-columns: 1fr;
     gap: 10px;
   }
-  body #PC-Section .Laptop-1,
-  body #PC-Section .Laptop-2,
-  body #PC-Section .Laptop-3,
-  body #PC-Section .Laptop-4,
-  body #Desktop-PC_Section .Laptop-1,
-  body #Desktop-PC_Section .Laptop-2,
-  body #Desktop-PC_Section .Laptop-3,
-  body #Desktop-PC_Section .Laptop-4 {
+  body .Laptop-1,
+  body .Laptop-2,
+  body .Laptop-3,
+  body .Laptop-4 {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -244,7 +233,7 @@ body #Desktop-PC_Section .Laptops_container .Laptop-4 {
 }
 body #Laptop_section {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr;
   gap: 20px;
   background: #515151;
   color: white;
@@ -252,20 +241,94 @@ body #Laptop_section {
 body #Laptop_section .Laptop_headline {
   font-size: 2.5rem;
   display: flex;
+  justify-content: center;
   align-items: center;
   color: rgba(255, 0, 0, 0.78);
   text-shadow: 10px 10px 10px black;
 }
-body #Laptop_section .Laptop_side_container_left,
-body #Laptop_section .Laptop_side_container_right {
-  width: 20%;
-  text-align: center;
+body #Laptop_section .Laptop_main_image {
+  width: 100%;
+}
+body #Laptop_section .Laptop_main_image img {
+  width: 100%;
+  height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 body #Laptop_section .content {
-  grid-column: 2;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 20px;
+  color: white;
+}
+body #Laptop_section .content .Laptop-1,
+body #Laptop_section .content .Laptop-2,
+body #Laptop_section .content .Laptop-3,
+body #Laptop_section .content .Laptop-4,
+body #Laptop_section .content .Laptop-5,
+body #Laptop_section .content .Laptop-6 {
+  border: 1px solid red;
+  display: flex;
+  box-shadow: 10px 10px 10px red;
+}
+body #Laptop_section button {
+  border-radius: 20px;
+  width: 50px;
+}
+body #Laptop_section button:hover {
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+body #Laptop_section .Laptop_info {
+  padding: 20px;
+  text-align: right;
+}
+body #Laptop_section .Laptop_info h3 {
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  body .content {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  body .Laptop-1,
+  body .Laptop-2,
+  body .Laptop-3,
+  body .Laptop-4,
+  body .Laptop-5,
+  body .Laptop-6 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+body #Laptop_hinweis {
+  background: #333;
+  color: white;
+}
+body #Laptop_hinweis h4 {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  text-shadow: 10px 10px 10px black;
+}
+body #Laptop_hinweis pre {
+  font-size: 1.2rem;
+  display: flex;
+  margin-top: 12px;
+}
+@media (max-width: 768px) {
+  body h4 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  body pre {
+    font-size: 0.785rem;
+    text-align: center;
+  }
 }
 body .info_section {
   background: #515151;
