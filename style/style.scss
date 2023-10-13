@@ -26,7 +26,7 @@ body{
     font-family: 'Philosopher', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Signika', sans-serif;
-
+        //  Hier beginnt das Styling der Website mit dem Header
         header{
             font-family: 'Open Sans', sans-serif;
             background: rgba(128, 128, 128, 0.852);
@@ -77,6 +77,7 @@ body{
                         color:red;
                         text-decoration: underline;
                     }
+                    // Ab hier geben wir die Größe und breite an des Slides
                     .slider_container {
                         width: 100%;
                         overflow: hidden;
@@ -94,6 +95,7 @@ body{
                         height: auto;
                         display: block;
                     }
+                    //  Ab hier endet der Style für die Slides
                     #home{
                         text-decoration: none;
                     }
@@ -135,6 +137,8 @@ body{
                         }
                     }
         }
+        //  Hier geht es um das Styling des ganzen Konstrukt der Produkte in dem Fall PC und Laptops
+        // Um code zu sparen habe ich die PC und Laptop Website hier eingebunden
         #PC-Section,
         #Desktop-PC_Section{
             background: #333;
@@ -220,6 +224,10 @@ body{
                     }
                 }
         }
+        //  Hier endet das Styling des Hauptteils (Die Produkte)
+
+        // Das ist das Styling für die Info Section also den Versand der Zahlungsmethode
+        // da ich diesen nicht sofort über den footer einbinden wollte habe ich eine seperate Section dafür angebracht.
         .info_section{
             background: #515151;
             flex-wrap: wrap;
@@ -258,6 +266,7 @@ body{
                         height: auto;
                     }
                 }
+                //  Hier endet das Normale Styling für die info Section 
         @media screen and (max-width: 768px) {
             .info_section {
                 flex-direction: column;
@@ -272,6 +281,8 @@ body{
                 margin: 10px 0;
             }
         }
+
+        //  Hier beginnt das Styling des Footers
         footer{
             background-color: #333;
             color: #fff;
@@ -288,6 +299,7 @@ body{
                 text-decoration: none;
             }
         }
+        //  Hier endet das Styling des Footers
         @media screen and (max-width: 768px) {
             footer {
                 padding: 10px;
