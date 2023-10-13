@@ -225,7 +225,33 @@ body{
                 }
         }
         //  Hier endet das Styling des Hauptteils (Die Produkte)
-
+        //  Hie wird der Style breich für die Laptop Page erstellt
+        #Laptop_section{
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 20px;
+            background: #515151;
+            color: white;
+            .Laptop_headline{
+                font-size: 2.5rem;
+                display: flex;
+                align-items: center;
+                color: rgba(255, 0, 0, 0.78);
+                text-shadow: 10px 10px 10px black;
+            }
+                .Laptop_side_container_left,
+                .Laptop_side_container_right {
+                    width: 20%;
+                    text-align: center;
+                }
+                .content {
+                    grid-column: 2;
+                    display: grid;
+                    grid-template-columns: repeat( 2,1fr);
+                    gap: 20px;
+                }
+                
+        }
         // Das ist das Styling für die Info Section also den Versand der Zahlungsmethode
         // da ich diesen nicht sofort über den footer einbinden wollte habe ich eine seperate Section dafür angebracht.
         .info_section{

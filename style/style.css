@@ -242,6 +242,31 @@ body #Desktop-PC_Section .Laptops_container .Laptop-4 {
     text-align: center;
   }
 }
+body #Laptop_section {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+  background: #515151;
+  color: white;
+}
+body #Laptop_section .Laptop_headline {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 0, 0, 0.78);
+  text-shadow: 10px 10px 10px black;
+}
+body #Laptop_section .Laptop_side_container_left,
+body #Laptop_section .Laptop_side_container_right {
+  width: 20%;
+  text-align: center;
+}
+body #Laptop_section .content {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
 body .info_section {
   background: #515151;
   flex-wrap: wrap;
