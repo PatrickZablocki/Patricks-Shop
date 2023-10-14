@@ -137,67 +137,52 @@ body #PC-Section,
 body #Desktop-PC_Section {
   background: #333;
 }
-body #PC-Section h2,
-body #Desktop-PC_Section h2 {
+body h2 {
   color: white;
   text-shadow: 10px 10px 10px black;
   font-size: 3rem;
   display: flex;
   justify-content: center;
 }
-body #PC-Section .PC_container,
-body #Desktop-PC_Section .PC_container {
+body .PC_container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   padding: 10px 20px;
   color: white;
+  gap: 20px;
 }
-body #PC-Section .PC_container .Zocker-PC, body #PC-Section .PC_container .Zocker-PC-Aet,
-body #PC-Section .PC_container .Gamer-PC, body #PC-Section .PC_container .PC-Gaming,
-body #PC-Section .PC_container .Gamer-PC-Aspect, body #PC-Section .PC_container .PC-für-Zocker,
-body #PC-Section .PC_container .Zocker-PC-Viking, body #PC-Section .PC_container .Battelfield-Private,
-body #PC-Section .PC_container .Battelfield-Corporal, body #PC-Section .PC_container .Spiele-PC,
-body #PC-Section .PC_container .Zocker-PC-Dear, body #PC-Section .PC_container .PC-Gamer-Sharpshooter,
-body #Desktop-PC_Section .PC_container .Zocker-PC,
-body #Desktop-PC_Section .PC_container .Zocker-PC-Aet,
-body #Desktop-PC_Section .PC_container .Gamer-PC,
-body #Desktop-PC_Section .PC_container .PC-Gaming,
-body #Desktop-PC_Section .PC_container .Gamer-PC-Aspect,
-body #Desktop-PC_Section .PC_container .PC-für-Zocker,
-body #Desktop-PC_Section .PC_container .Zocker-PC-Viking,
-body #Desktop-PC_Section .PC_container .Battelfield-Private,
-body #Desktop-PC_Section .PC_container .Battelfield-Corporal,
-body #Desktop-PC_Section .PC_container .Spiele-PC,
-body #Desktop-PC_Section .PC_container .Zocker-PC-Dear,
-body #Desktop-PC_Section .PC_container .PC-Gamer-Sharpshooter {
+body .Zocker-PC, body .Zocker-PC-Aet,
+body .Gamer-PC, body .PC-Gaming,
+body .Gamer-PC-Aspect, body .PC-für-Zocker,
+body .Zocker-PC-Viking, body .Battelfield-Private,
+body .Battelfield-Corporal, body .Spiele-PC,
+body .Zocker-PC-Dear, body .PC-Gamer-Sharpshooter {
   border: 1px solid red;
   display: flex;
   align-items: center;
   box-shadow: 10px 10px 10px red;
 }
-body #PC-Section .PC_container .PC-info,
-body #Desktop-PC_Section .PC_container .PC-info {
+body .PC-info {
   padding: 20px;
   text-align: right;
 }
-body #PC-Section .PC_container .PC-info h3,
-body #Desktop-PC_Section .PC_container .PC-info h3 {
+body .PC-info h3 {
   margin-top: 0;
 }
-body #PC-Section .PC_container .Zocker-PC img,
-body #Desktop-PC_Section .PC_container .Zocker-PC img {
+body .Zocker-PC img {
   max-width: 100%;
 }
-body #PC-Section .PC_container button,
-body #Desktop-PC_Section .PC_container button {
+body button {
   border-radius: 20px;
   width: 50px;
 }
-body #PC-Section .PC_container button:hover,
-body #Desktop-PC_Section .PC_container button:hover {
+body button:hover {
   background: red;
   color: white;
   cursor: pointer;
+}
+body .PC-info_container {
+  text-align: right;
 }
 @media screen and (max-width: 768px) {
   body .PC_container {
@@ -210,6 +195,7 @@ body .Laptops_container {
   grid-template-columns: 1fr 1fr;
   padding: 10px 20px;
   color: white;
+  gap: 20px;
 }
 body .Laptops_container .Laptop-1, body .Laptops_container .Laptop-2,
 body .Laptops_container .Laptop-3, body .Laptops_container .Laptop-4 {
@@ -262,6 +248,7 @@ body #Laptop_section .content {
   grid-template-columns: 1fr 1fr;
   padding: 10px 20px;
   color: white;
+  gap: 20px;
 }
 body #Laptop_section .content .Laptop-1,
 body #Laptop_section .content .Laptop-2,
@@ -352,6 +339,13 @@ body .info_section p {
   font-size: 1.5rem;
   font-weight: bold;
 }
+body .info_section a {
+  color: red;
+}
+body .info_section a:hover {
+  text-decoration: underline;
+  color: white;
+}
 body .info_section .kunden_container,
 body .info_section .bezahl_container,
 body .info_section .versand_container,
@@ -367,6 +361,13 @@ body .info_section .versand_container img,
 body .info_section .güter_container img {
   max-width: 100%;
   height: auto;
+}
+body .kunden_container p:hover {
+  color: white;
+  text-decoration: none;
+}
+body .versand_container p:hover {
+  color: white;
 }
 @media screen and (max-width: 768px) {
   body .info_section {
