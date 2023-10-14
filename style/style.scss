@@ -142,6 +142,7 @@ body{
         #PC-Section,
         #Desktop-PC_Section{
             background: #333;
+        }
                 h2{
                     color: white;
                     text-shadow: 10px 10px 10px black;
@@ -151,10 +152,11 @@ body{
                 }
                 .PC_container{
                     display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-columns:1fr 1fr;
                     padding: 10px 20px;
                     color: white;
-
+                    gap: 20px;
+                }
                         .Zocker-PC,.Zocker-PC-Aet,
                         .Gamer-PC,.PC-Gaming,
                         .Gamer-PC-Aspect,.PC-für-Zocker,
@@ -187,9 +189,9 @@ body{
                             color: white;
                             cursor: pointer;
                         }
-                    
+                .PC-info_container{
+                    text-align: right;
                 }
-            }
                 @media screen and (max-width: 768px) {
                     .PC_container {
                         grid-template-columns: 1fr;
@@ -201,6 +203,7 @@ body{
                         grid-template-columns: 1fr 1fr;
                         padding: 10px 20px;
                         color: white;
+                        gap: 20px;
 
                         .Laptop-1,.Laptop-2,
                         .Laptop-3,.Laptop-4{
@@ -254,6 +257,8 @@ body{
                     grid-template-columns: 1fr 1fr;
                     padding: 10px 20px;
                     color: white;
+                    gap: 20px;
+                    
                     .Laptop-1,
                     .Laptop-2,
                     .Laptop-3,
@@ -349,6 +354,13 @@ body{
                     font-size: 1.5rem;
                     font-weight: bold;
                 }
+                a{
+                    color: red;
+                }
+                a:hover{
+                    text-decoration: underline;
+                    color: white;
+                }
                     .kunden_container,
                     .bezahl_container,
                     .versand_container,
@@ -364,6 +376,16 @@ body{
                     .güter_container img {
                         max-width: 100%;
                         height: auto;
+                    }
+                }
+                .kunden_container{
+                    p:hover{
+                        color: white;                        text-decoration: none;
+                    }
+                }
+                .versand_container{
+                    p:hover{
+                        color: white;
                     }
                 }
                 //  Hier endet das Normale Styling für die info Section 
