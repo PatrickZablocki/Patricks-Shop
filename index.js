@@ -37,7 +37,20 @@ menuToggle.addEventListener('click', () => {
     });
 });
 
-// 
+// Hier estelle ich für den News Letter ein Pop Up so das wie wir auf den Newsletter klicken das wir ein Pop Up bekommen
+
+        const subscribeLink = document.getElementById("subscribe-link");
+        const popup = document.getElementById("popup");
+        const closeButton = document.getElementById("close-button");
+
+        subscribeLink.addEventListener("click", function(e) {
+            e.preventDefault(); // Verhindert das Navigieren zur leeren URL
+            popup.style.display = "block";
+        });
+
+        closeButton.addEventListener("click", function(){
+            popup.style.display = "none";
+        });
 
 
 

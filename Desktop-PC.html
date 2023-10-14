@@ -23,7 +23,7 @@
             <ul class="nav-links">
                 <li><a href="./Desktop-PC.html">Desktop PC</a></li>
                 <li><a href="./Laptop.html">Laptops</a></li>
-                <li><a href="">Professionel</a></li>
+                <li><a href="./Professionel.html">Professionel</a></li>
                 <li><a href="">Peripherie</a></li>
             </ul>
         </nav>
@@ -32,6 +32,9 @@
 <!--  Hier endet der Header für den Desktop PC Seite -->
 <!--  Hier beginnt die Main Section mit allen Desktops PCs -->
 <main id="Desktop-PC_Section">
+    <div class="PC_main_image">
+        <img src="https://www.hitech-gamer.com/out/ck_pictures/promos/2023/20221222_SALE_Website_Kategorie_Skyscraper_right.png" alt="">
+    </div>
     <h2>Gaming PC</h2>
     <!-- Hier sind die Bestseller von den PCs aufgelistet -->
     <div class="PC_container">
@@ -218,7 +221,29 @@
         </div>
         <div class="Newsletter_container">
         <h2>NEWSLETTER 📰</h2>
-        <p>Sei immer auf dem neuesten Stand und sichere dir viele Vorteile: <a href="https://www.youtube.com/watch?v=d1YBv2mWll0&ab_channel=Sordiway">Abonnieren</a></p>
+        <p>Sei immer auf dem neuesten Stand und sichere dir viele Vorteile: <a href="#" id="subscribe-link">Abonnieren</a></p>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h3>Anmeldung für E-Mail Benachrichtigungen</h3>
+                <p>Melde dich zu unserem HI-TECH E-Mail Service an.</p>
+                <form>
+                    <label for="email">E-Mail Adresse *</label>
+                    <input type="email" id="email" required>
+                    <label for="firstname">Vorname *</label>
+                    <input type="text" id="firstname" required>
+                    <label for="lastname">Nachname</label>
+                    <input type="text" id="lastname">
+                    <label for="language">Bevorzugte Sprache</label>
+                    <select id="language">
+                        <option value="Deutsch">Deutsch</option>
+                    </select>
+                    <label for="notifications">E-Mail Benachrichtigungen *</label>
+                    <input type="checkbox" id="notifications" checked>
+                    <button type="submit">Abonnieren</button>
+                </form>
+                <button id="close-button">Schließen</button>
+            </div>
         </div>
     </div>
 </section>
