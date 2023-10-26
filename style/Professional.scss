@@ -17,3 +17,53 @@
     background-color: #fff;
     padding: 20px;
 }
+#Geräte_Section{
+    background: #333;
+    color: white;
+}
+        .Geräte_container{
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            padding: 10px 20px;
+            color: white;
+            gap: 20px;
+        }
+            .Gerät-1,.Gerät-2,
+            .Gerät-3,.Gerät-4{
+                border: 1px solid red;
+                display: flex;
+                align-items: center;
+                box-shadow: 10px 10px 10px red;
+            }
+            .Geräte-info {
+                padding: 20px;
+                text-align: right;
+            }
+            
+            .Geräte-info h3 {
+                margin-top: 0;
+            }
+
+            .Eqipment_container{
+                display: grid;
+                grid-template-columns:1fr 1fr;
+                padding: 10px 20px;
+                color: white;
+                gap: 20px;
+            }
+                .Maus-1,.Maus-2,
+                .Maus-3,.Maus-4{
+                    border: 1px solid red;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: 10px 10px 10px red;
+                    }
+                    .Tastatur-1,.Tastatur-2,
+                    .Tastatur-3,.Tastatur-4{
+                        border: 1px solid red;
+                        display: flex;
+                        align-items: center;
+                        box-shadow: 10px 10px 10px red;
+                        }
+                
+        
