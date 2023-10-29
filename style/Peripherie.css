@@ -71,4 +71,56 @@
   display: flex;
   align-items: center;
   box-shadow: 10px 10px 10px red;
-}/*# sourceMappingURL=Professional.css.map */
+}
+
+.Extra_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 20px;
+  color: white;
+  gap: 20px;
+}
+
+.Headset-1, .Headset-2,
+.Headset-3, .Headset-4 {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  box-shadow: 10px 10px 10px red;
+}
+
+.Geräte-info {
+  padding: 20px;
+  text-align: right;
+}
+
+.Geräte-info h3 {
+  margin-top: 0;
+}
+
+.Mauspad-1, .Mauspad-2,
+.Mauspad-3 {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  box-shadow: 10px 10px 10px red;
+}
+
+@media screen and (max-width: 768px) {
+  .Geräte_container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Eqipment_container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Extra_container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}/*# sourceMappingURL=Peripherie.css.map */
