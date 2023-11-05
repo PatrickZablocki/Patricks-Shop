@@ -1,0 +1,65 @@
+#Professionel_Section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background: #515151;
+  color: white;
+}
+#Professionel_Section .Professionel_headline {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 0, 0, 0.78);
+  text-shadow: 10px 10px 10px black;
+}
+#Professionel_Section .Professionel_image {
+  width: 100%;
+}
+#Professionel_Section .Professionel_image img {
+  width: 100%;
+}
+#Professionel_Section .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 20px;
+  color: white;
+  gap: 20px;
+}
+#Professionel_Section .content .P_PC-1, #Professionel_Section .content .P_PC-2,
+#Professionel_Section .content .P_PC-3, #Professionel_Section .content .P_PC-4,
+#Professionel_Section .content .P_PC-5, #Professionel_Section .content .P_PC-6 {
+  border: 1px solid red;
+  display: flex;
+  box-shadow: 10px 10px 10px red;
+}
+#Professionel_Section button {
+  border-radius: 20px;
+  width: 50px;
+}
+#Professionel_Section button:hover {
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+#Professionel_Section .Professionel_info {
+  padding: 20px;
+  text-align: right;
+}
+#Professionel_Section .Professionel_info h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .P_PC-1, .P_PC-2,
+  .P_PC-3, .P_PC-4,
+  .P_PC-5, .P_PC-6 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}/*# sourceMappingURL=Professionel.css.map */
