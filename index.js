@@ -44,7 +44,7 @@ menuToggle.addEventListener('click', () => {
         const closeButton = document.getElementById("close-button");
 
         subscribeLink.addEventListener("click", function(e) {
-            e.preventDefault(); // Verhindert das Navigieren zur leeren URL
+            e.preventDefault();
             popup.style.display = "block";
         });
 
